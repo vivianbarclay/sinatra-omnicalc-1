@@ -1,0 +1,27 @@
+<!-- /views/wrapper.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculators</title>
+
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div><a href="/square/new">Square with Form</a></div>
+    <div><a href="/square_root/new">Square Root with Form</a></div>
+    <div><a href="/payment/new">Payment with Form</a></div>
+    <div><a href="/random/new">Random with Form</a></div>
+  </div>
+
+  <%= yield %>
+
+</body>
+</html>
